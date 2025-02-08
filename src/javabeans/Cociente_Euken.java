@@ -101,9 +101,13 @@ public class Cociente_Euken {
     //Método4
 
     public void raizNumero(double numReal1){
-        double resultado = Math.sqrt(numReal1);
-        System.out.println("El resultado del raiz cuadrada es " + resultado);
-
+        if (numReal1 >= 0) {
+            double resultado = Math.sqrt(numReal1);
+            System.out.println("El resultado del raiz cuadrada es " + resultado);
+        }
+        else {
+            System.out.println("El resultado del raiz cuadrada es nulo");
+        }
     }
 
 }
