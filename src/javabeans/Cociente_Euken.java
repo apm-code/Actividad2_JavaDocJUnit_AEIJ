@@ -12,7 +12,7 @@ public class Cociente_Euken {
 
     //Constructor
 
-    public Cociente_Euken(double numReal1, double numReal2) {
+    public Cociente_Euken() {
         this.numReal1 = numReal1;
         this.numReal2 = numReal2;
     }
@@ -70,7 +70,7 @@ public class Cociente_Euken {
             System.out.println("El resultado de la division real es " + resultado);
         }
         else {
-            System.out.println("El cálculo de la division real es 0.");
+            System.out.println("El cálculo de la division real es nulo.");
         }
     }   
 
