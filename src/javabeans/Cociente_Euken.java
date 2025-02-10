@@ -90,11 +90,9 @@ public class Cociente_Euken {
                     break;
 
                 default:
-                    System.out.println("Opcion no valida");
+                    System.out.println("Opcion no valida. FIN DEL PROGRAMA");
 
             }
         } while (opcionMenu>=1 || opcionMenu <=4);
-
-        System.out.println("Fin del programa");
     }
 }
