@@ -20,7 +20,7 @@ public class Producto_Javier {
     // Menú interactivo para ejecutar las operaciones
 
 
-    public void menuMultiplicacion(Scanner leer) {
+    public void menuProducto(Scanner leer) {
         int opcion;
 
         do {
@@ -68,7 +68,7 @@ public class Producto_Javier {
         double num1 = leer.nextDouble(); // Almacena el primer número real
         System.out.print("Introduce el segundo número real : ");
         double num2 = leer.nextDouble(); // Almacena el segundo número real
-        return num1 * num2; // Devuelve el resultado de la suma
+        return num1 * num2; // Devuelve el resultado del producto
     }
 
     /**
@@ -82,7 +82,7 @@ public class Producto_Javier {
         int num1 = leer.nextInt(); // Almacena el primer número entero
         System.out.print("Introduce el segundo número entero : ");
         int num2 = leer.nextInt(); // Almacena el segundo número entero
-        return num1 + num2; // Devuelve el resultado de la suma
+        return num1 + num2; // Devuelve el resultado del producto
     }
 
     /**
@@ -98,7 +98,7 @@ public class Producto_Javier {
         double num2 = leer.nextDouble(); // Almacena el segundo número real
         System.out.print("Introduce el tercer número real : ");
         double num3 = leer.nextDouble(); // Almacena el tercer número real
-        return num1 * num2 * num3; // Devuelve el resultado de la suma
+        return num1 * num2 * num3; // Devuelve el resultado del producto
 
     }
     /**
