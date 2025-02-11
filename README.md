@@ -15,7 +15,7 @@ La actividad consiste en implementar el código de diferentes operaciones matem�
 Las operaciones que realiza la calculadora son:
 - ✅ ➕ **Suma** (implementada). Encargado: Adrián.
 - ⏳ ➖ **Resta** (pendiente). Encargado: Ignacio.
-- ⏳ ✖️ **Producto** (pendiente). Encargado: Javier.
+- ⏳ ✖️ **Producto** (implementada). Encargado: Javier.
 - ⏳ ➗ **Cociente** (pendiente). Encargado: Euken. 
 
 ### 📚 Características del proyecto
