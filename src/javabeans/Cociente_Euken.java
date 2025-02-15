@@ -14,85 +14,86 @@ import java.util.Scanner;
  * @version 1.0
  */
 
-
 public class Cociente_Euken {
 
-    private double numReal1;
-    private double numReal2;
-
-    private int numEntero1;
-    private int numEntero2;
-
-    private int opcionMenu;
-
-
-    public void menuDivision(){
+    public void menuCociente(Scanner leer) {
+        int opcion;
         do {
-            System.out.println("Menu cocientes. Selecciona una opcion para el calculo");
-            System.out.println("1. Division de dos numeros reales");
-            System.out.println("2. Division de dos numeros enteros");
-            System.out.println("3. Inversa de dos numeros reales");
-            System.out.println("4. Raiz cuadrada de dos numeros enteros");
+            System.out.println("\nMenú División:");
+            System.out.println("1. División de dos números reales");
+            System.out.println("2. División de dos números enteros");
+            System.out.println("3. Inversa de un número real");
+            System.out.println("4. Raíz cuadrada de un número real");
+            System.out.println("5. Volver al menú principal");
+            System.out.print("Seleccione una opción: ");
+            opcion = leer.nextInt();
 
-            Scanner leer = new Scanner(System.in);
-            opcionMenu = leer.nextInt();
-
-            switch (opcionMenu) {
+            switch (opcion) {
                 case 1:
-                    System.out.println("Dame un número real");
-                    double numReal1 = leer.nextDouble();
-                    System.out.println("Dame otro número real");
-                    double numReal2 = leer.nextDouble();
-
-                    if (numReal2 != 0) {
-                        double resultado = numReal1 / numReal2;
-                        System.out.println("El resultado de la division real es " + resultado);
-                    } else {
-                        System.out.println("El cálculo de la division real es nulo.");
-                    }
+                    System.out.println("El resultado de la división es: " + divisionDosReales(leer));
                     break;
-
                 case 2:
-                    System.out.println("Dame un número entero");
-                    int numEntero1 = leer.nextInt();
-                    System.out.println("Dame otro número entero");
-                    int numEntero2 = leer.nextInt();
-
-                    if (numEntero2 != 0) {
-                        double resultado = numEntero1 / numEntero2;
-                        System.out.println("El resultado de la division entera es " + resultado);
-                    } else {
-                        System.out.println("El cálculo de la division entera es nulo");
-                    }
-
+                    System.out.println("El resultado de la división es: " + divisionDosEnteros(leer));
+                    break;
                 case 3:
-                    System.out.println("Dame un número real");
-                    numReal2 = leer.nextDouble();
-
-                    if (numReal2 != 0) {
-                        double resultado = 1 / numReal2;
-                        System.out.println("El resultado de la inversa real es " + resultado);
-                    } else {
-                        System.out.println("El resultado de la inversa real es nulo");
-                    }
+                    System.out.println("El resultado de la inversa es: " + inversaReal(leer));
                     break;
-
                 case 4:
-                    System.out.println("Dame un número real");
-                    numReal1 = leer.nextDouble();
-
-                    if (numReal1 >= 0) {
-                        double resultado = Math.sqrt(numReal1);
-                        System.out.println("El resultado del raiz cuadrada es " + resultado);
-                    } else {
-                        System.out.println("El resultado del raiz cuadrada es nulo");
-                    }
+                    System.out.println("El resultado de la raíz cuadrada es: " + raizCuadrada(leer));
                     break;
-
-                default:
-                    System.out.println("Opcion no valida. FIN DEL PROGRAMA");
-
             }
-        } while (opcionMenu>=1 || opcionMenu <=4);
+        } while (opcion != 5);
+    }
+
+    public double divisionDosReales(Scanner leer) {
+        System.out.print("Introduce el primer número real: ");
+        double a = leer.nextDouble();
+        System.out.print("Introduce el segundo número real: ");
+        double b = leer.nextDouble();
+
+        if (b <= 0) {
+            System.out.println("El cálculo de la división real es nulo.");
+            return Double.NaN;
+        }
+
+        return a / b;
+    }
+
+    public double divisionDosEnteros(Scanner leer) {
+        System.out.print("Introduce el primer número entero: ");
+        int a = leer.nextInt();
+        System.out.print("Introduce el segundo número entero: ");
+        int b = leer.nextInt();
+
+        if (b <= 0) {
+            System.out.println("El cálculo de la división entera es nulo.");
+            return Double.NaN;
+        }
+
+        return (double) a / b;
+    }
+
+    public double inversaReal(Scanner leer) {
+        System.out.print("Introduce un número real: ");
+        double a = leer.nextDouble();
+
+        if (a <= 0) {
+            System.out.println("El resultado de la inversa real es nulo.");
+            return Double.NaN;
+        }
+
+        return 1 / a;
+    }
+
+    public double raizCuadrada(Scanner leer) {
+        System.out.print("Introduce un número real: ");
+        double a = leer.nextDouble();
+
+        if (a < 0) {
+            System.out.println("El resultado del raiz cuadrada es nulo.");
+            return Double.NaN;
+        }
+
+        return Math.sqrt(a);
     }
 }

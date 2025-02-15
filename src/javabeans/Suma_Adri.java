@@ -64,6 +64,9 @@ public class Suma_Adri {
         double b = leer.nextDouble(); // Almacena el segundo número real
         return a + b; // Devuelve el resultado de la suma
     }
+    public double sumaDosReales(double a, double b) {
+        return a + b;
+    }
     /**
      * 2. Suma de dos números enteros, denominados a y b.
      * @param leer Scanner recoge los valores introducidos.
@@ -75,6 +78,9 @@ public class Suma_Adri {
         System.out.print("Introduce el segundo número entero: ");
         int b = leer.nextInt(); // Almacena el segundo número entero
         return a + b; // Devuelve el resultado de la suma
+    }
+    public int sumaDosEnteros(int a, int b) {
+        return a + b;
     }
 
     /**
@@ -90,6 +96,9 @@ public class Suma_Adri {
         System.out.print("Introduce el tercer número real: ");
         double c = leer.nextDouble(); // Almacena el tercer número real
         return a + b + c; // Devuelve el resultado de la suma
+    }
+    public double sumaTresReales(double a, double b, double c) {
+        return a + b + c;
     }
 
     /**
@@ -107,6 +116,9 @@ public class Suma_Adri {
     public void sumaAcumulada(Scanner leer) {
         System.out.print("Introduce el número que quieres sumar al acumulado: ");
         double a = leer.nextDouble();
+        valorAcumulado += a;
+    }
+    public void sumaAcumulada(double a) {
         valorAcumulado += a;
     }
     /**
