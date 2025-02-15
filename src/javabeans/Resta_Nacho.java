@@ -12,11 +12,10 @@ import java.util.Scanner;
  * @author [Tu Nombre]
  * @version 1.0
  */
-<<<<<<< HEAD
+
 public class Resta_Nacho {
-=======
-public class Resta {
->>>>>>> Resta-Nacho_Martinez_Ortega
+
+
     /**
      * Esta variable almacena el valor acumulado de las restas realizadas.
      */
