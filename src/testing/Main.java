@@ -15,7 +15,7 @@ import java.util.Scanner;
  * @author Euken Sáez
  * @author Ignacio Martínez
  * @author Javier García
- * @version 1.0
+ * @version 1.1
  */
 public class Main {
     public static void main(String[] args) {

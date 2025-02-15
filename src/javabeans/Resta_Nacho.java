@@ -53,6 +53,9 @@ public class Resta_Nacho {
                 case 5:
                     System.out.println("El valor acumulado actual es: " + getValorAcumulado());
                     break;
+                default:
+                    System.out.println("Opción no válida. Inténtalo de nuevo.");
+                    break;
             }
         } while (opcion != 6);
     }
@@ -67,6 +70,12 @@ public class Resta_Nacho {
         double b = leer.nextDouble();
         return a - b;
     }
+    /**
+     * Método restaDosReales para pruebas unitarias.
+     */
+    public double restaDosReales(double a, double b) {
+        return a - b;
+    }
 
     /**
      * Este método solicita dos números enteros al usuario y devuelve su resta.
@@ -76,6 +85,12 @@ public class Resta_Nacho {
         int a = leer.nextInt();
         System.out.print("Introduce el segundo número entero: ");
         int b = leer.nextInt();
+        return a - b;
+    }
+    /**
+     * Método restaDosEnteros para pruebas unitarias.
+     */
+    public double restaDosEnteros(double a, double b) {
         return a - b;
     }
 
@@ -91,6 +106,12 @@ public class Resta_Nacho {
         double c = leer.nextDouble();
         return a - b - c;
     }
+    /**
+     * Método restaTresReales para pruebas unitarias.
+     */
+    public double restaTresReales(double a, double b, double c) {
+        return a - b - c;
+    }
 
     /**
      * Este método resta un número al valor acumulado, modificando su estado.
@@ -98,6 +119,12 @@ public class Resta_Nacho {
     public void restaAcumulada(Scanner leer) {
         System.out.print("Introduce el número que quieres restar al acumulado: ");
         double a = leer.nextDouble();
+        valorAcumulado -= a;
+    }
+    /**
+     * Método restaAcumulada para pruebas unitarias.
+     */
+    public void restaAcumulada(double a){
         valorAcumulado -= a;
     }
 
