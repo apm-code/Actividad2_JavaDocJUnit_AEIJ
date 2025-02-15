@@ -10,7 +10,7 @@ import java.util.Scanner;
  *      3. Suma de tres números reales.
  *      4. Suma con valor acumulado.
  * @author Adrián I. Pérez
- * @version 1.0
+ * @version 1.2
  */
 
 public class Suma_Adri {
@@ -49,6 +49,9 @@ public class Suma_Adri {
                 case 5:
                     System.out.println("El valor acumulado actual es: " + getValorAcumulado());
                     break;
+                default:
+                    System.out.println("Opción no válida. Introduce otro valor:");
+                    break;
             }
         } while (opcion != 6);
     }
@@ -64,6 +67,13 @@ public class Suma_Adri {
         double b = leer.nextDouble(); // Almacena el segundo número real
         return a + b; // Devuelve el resultado de la suma
     }
+    /**
+     * 1.1. Suma de dos números reales.
+     * Método diseñado para pruebas unitarias
+     * @param a Primer valor.
+     * @param b segundo valor.
+     * @return Suma de los valores a y b.
+     */
     public double sumaDosReales(double a, double b) {
         return a + b;
     }
@@ -79,6 +89,13 @@ public class Suma_Adri {
         int b = leer.nextInt(); // Almacena el segundo número entero
         return a + b; // Devuelve el resultado de la suma
     }
+    /**
+     * 2.1. Suma de dos números enteros.
+     * Método diseñado para pruebas unitarias
+     * @param a Primer valor.
+     * @param b Segundo valor.
+     * @return Suma de los valores a y b.
+     */
     public int sumaDosEnteros(int a, int b) {
         return a + b;
     }
@@ -97,6 +114,14 @@ public class Suma_Adri {
         double c = leer.nextDouble(); // Almacena el tercer número real
         return a + b + c; // Devuelve el resultado de la suma
     }
+    /**
+     * 3.1. Suma de tres números reales.
+     * Método diseñado para pruebas unitarias
+     * @param a Primer valor.
+     * @param b Segundo valor.
+     * @param c Tercer valor.
+     * @return Suma de los valores a, b y c.
+     */
     public double sumaTresReales(double a, double b, double c) {
         return a + b + c;
     }
@@ -118,6 +143,10 @@ public class Suma_Adri {
         double a = leer.nextDouble();
         valorAcumulado += a;
     }
+    /**
+     * 4.1. Suma con valor acumulado para pruebas unitarias.
+     * @param a Valor que se acumula al valor acumulado.
+     */
     public void sumaAcumulada(double a) {
         valorAcumulado += a;
     }
