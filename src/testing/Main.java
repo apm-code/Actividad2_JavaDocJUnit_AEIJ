@@ -15,7 +15,7 @@ import java.util.Scanner;
  * @author Euken Sáez
  * @author Ignacio Martínez
  * @author Javier García
- * @version 1.0
+ * @version 1.1
  */
 public class Main {
     public static void main(String[] args) {
@@ -41,15 +41,15 @@ public class Main {
                                           * en la clase Suma_Adri
                                           */
                     break;
-            //    case 2:
-            //        menuResta(leer);
-            //        break;
-            //    case 3:
-            //        menuProducto(leer);
-            //        break;
-            //    case 4:
-            //        menuCociente(leer);
-            //        break;
+                case 2:
+                    resta.menuResta(leer);
+                    break;
+                case 3:
+                    producto.menuProducto(leer);
+                    break;
+                case 4:
+                    cociente.menuCociente(leer);
+                    break;
             }
         } while (opcion != 5); // El bucle se mantiene hasta seleccionar la opción 5.
         System.out.println("Fin del programa Calculadora");
