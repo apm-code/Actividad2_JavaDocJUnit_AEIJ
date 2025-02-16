@@ -9,10 +9,10 @@ import java.util.Scanner;
  *      2. Resta de dos números enteros.
  *      3. Resta de tres números reales.
  *      4. Resta con valor acumulado.
- * @author [Tu Nombre]
+ * @author Nacho Martinez Ortega
  * @version 1.0
  */
-public class Resta {
+public class Resta_Nacho {
     /**
      * Esta variable almacena el valor acumulado de las restas realizadas.
      */
