@@ -45,55 +45,103 @@ public class Cociente_Euken {
         } while (opcion != 5);
     }
 
-    public double divisionDosReales(Scanner leer) {
-        System.out.print("Introduce el primer número real: ");
-        double a = leer.nextDouble();
-        System.out.print("Introduce el segundo número real: ");
-        double b = leer.nextDouble();
+    //Método divisionDosReales que solicita dos reales y hace la división.
 
-        if (b <= 0) {
-            System.out.println("El cálculo de la división real es nulo.");
-            return Double.NaN;
+        public double divisionDosReales(Scanner leer) {
+            System.out.print("Introduce el primer número real: ");
+            double a = leer.nextDouble();
+            System.out.print("Introduce el segundo número real: ");
+            double b = leer.nextDouble();
+
+            if (b <= 0) {
+                System.out.println("El cálculo de la división real es nulo.");
+                return Double.NaN;
+            }
+
+            return a / b;
         }
 
-        return a / b;
-    }
+    //Método divisionDosReales para pruebas en Junit
 
-    public double divisionDosEnteros(Scanner leer) {
-        System.out.print("Introduce el primer número entero: ");
-        int a = leer.nextInt();
-        System.out.print("Introduce el segundo número entero: ");
-        int b = leer.nextInt();
-
-        if (b <= 0) {
-            System.out.println("El cálculo de la división entera es nulo.");
-            return Double.NaN;
+        public double divisionDosReales(double a, double b) {
+            if (b == 0) {
+                System.out.println("Error: División por cero.");
+                return Double.NaN;
+            }
+            return a / b;
         }
 
-        return (double) a / b;
-    }
 
-    public double inversaReal(Scanner leer) {
-        System.out.print("Introduce un número real: ");
-        double a = leer.nextDouble();
+    //Método divisionDosEnteros que solicita dos enteros y hace la división.
 
-        if (a <= 0) {
-            System.out.println("El resultado de la inversa real es nulo.");
-            return Double.NaN;
+        public double divisionDosEnteros(Scanner leer) {
+            System.out.print("Introduce el primer número entero: ");
+            int a = leer.nextInt();
+            System.out.print("Introduce el segundo número entero: ");
+            int b = leer.nextInt();
+
+            if (b <= 0) {
+                System.out.println("El cálculo de la división entera es nulo.");
+                return Double.NaN;
+            }
+            return (double) a / b;
         }
 
-        return 1 / a;
-    }
+    //Método divisionDosEnteros para pruebas en JUnit
 
-    public double raizCuadrada(Scanner leer) {
-        System.out.print("Introduce un número real: ");
-        double a = leer.nextDouble();
-
-        if (a < 0) {
-            System.out.println("El resultado del raiz cuadrada es nulo.");
-            return Double.NaN;
+        public double divisionDosEnteros(int a, int b) {
+            if (b == 0) {
+                System.out.println("Error: División por cero.");
+                return Double.NaN;
+            }
+            return (double) a / b;
         }
 
-        return Math.sqrt(a);
-    }
+        //Método inversaReal que realiza la inversa de un número real solicitado al usuario.
+
+            public double inversaReal (Scanner leer){
+                System.out.print("Introduce un número real: ");
+                double a = leer.nextDouble();
+
+                if (a <= 0) {
+                    System.out.println("El resultado de la inversa real es nulo.");
+                    return Double.NaN;
+                }
+
+            return 1 / a;
+        }
+
+        //Método inversaReal para pruebas en JUnit
+
+            public double inversaReal ( double a) {
+                if (a == 0) {
+                    System.out.println("Error: No se puede calcular la inversa de 0.");
+                    return Double.NaN;
+                }
+                 return 1 / a;
+            }
+
+            //Método raizCuadrada que realiza la raiz cuadrada de un número solicitado al usuario.
+
+            public double raizCuadrada (Scanner leer){
+                System.out.print("Introduce un número real: ");
+                double a = leer.nextDouble();
+
+                if (a < 0) {
+                    System.out.println("El resultado del raiz cuadrada es nulo.");
+                    return Double.NaN;
+                }
+
+                return Math.sqrt(a);
+            }
+
+            //Método raizCuadrada para pruebas en JUnit.
+
+            public double raizCuadrada ( double a){
+                if (a < 0) {
+                    System.out.println("Error: No se puede calcular la raíz cuadrada de un número negativo.");
+                    return Double.NaN;
+                }
+                return Math.sqrt(a);
+            }
 }
