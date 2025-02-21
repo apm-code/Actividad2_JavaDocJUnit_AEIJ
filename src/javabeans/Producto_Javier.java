@@ -16,8 +16,12 @@ import java.util.Scanner;
 
 public class Producto_Javier {
 
-
-    // Menú interactivo para ejecutar las operaciones
+    /**
+     * Método que muestra el menú de las posibles operaciones y permite
+     * seleccionar la deseada. El menú ejecuta un do-while y consta de un
+     * switch que, en función de la opción, ejecuta una operación u otra.
+     * @param leer recoge la opción introducida.
+     */
 
 
     public void menuProducto(Scanner leer) {
@@ -29,6 +33,7 @@ public class Producto_Javier {
             System.out.println("2. Producto de dos numeros enteros");
             System.out.println("3. Producto de tres números reales");
             System.out.println("4. Potencia");
+            System.out.println("5. Volver al menú principal");
             opcion = leer.nextInt();
 
             switch (opcion) {
@@ -52,9 +57,9 @@ public class Producto_Javier {
 
                 default:
                     System.out.println("ERROR 404-NOT FOUND. FIN DEL PROGRAMA");
-
+                break;
             }
-        } while (opcion >= 1 || opcion <= 4);
+        } while (opcion != 5);
     }
 
     /**
@@ -72,6 +77,18 @@ public class Producto_Javier {
     }
 
     /**
+    * 1.1. Producto de dos números reales.
+    * Método diseñado para pruebas unitarias
+    * @param num1 Primer valor.
+     * @param num2 Segundo valor.
+    * @return Producto de los valores num1 y num2.
+    */
+
+    public double productoDosReales(double num1, double num2) {
+        return num1 * num2;
+    }
+
+    /**
      * 2. Producto de dos números enteros, denominados num1 y num2.
      * @param leer Scanner recoge los valores introducidos.
      * @return Producto de los números enteros introducidos.
@@ -82,7 +99,18 @@ public class Producto_Javier {
         int num1 = leer.nextInt(); // Almacena el primer número entero
         System.out.print("Introduce el segundo número entero : ");
         int num2 = leer.nextInt(); // Almacena el segundo número entero
-        return num1 + num2; // Devuelve el resultado del producto
+        return num1 * num2; // Devuelve el resultado del producto
+    }
+
+    /**
+     * 2.1. Producto de dos números enteros.
+     * Método diseñado para pruebas unitarias
+     * @param num1 Primer valor.
+     * @param num2 Segundo valor.
+     * @return Producto de los valores num1 y num2.
+     */
+    public int prodcutoDosEnteros(int num1, int num2) {
+        return num1 * num2;
     }
 
     /**
@@ -102,6 +130,18 @@ public class Producto_Javier {
 
     }
     /**
+     * 3.1. Producto de tres números reales.
+     * Método diseñado para pruebas unitarias
+     * @param num1 Primer valor.
+     * @param num2 Segundo valor.
+     * @param num3 Tercer valor.
+     * @return Producto de los valores num1, num2 y num3.
+     */
+    public double productoTresReales(double num1, double num2, double num3) {
+        return num1 * num2 * num3;
+    }
+
+    /**
      * 4. Potencia de dos números, denominados num1 y num2.
      * @param leer Scanner recoge los valores introducidos.
      * @return Math.pow, método estático de la clase Math que se utiliza para calcular la potencia de un número.
@@ -113,5 +153,14 @@ public class Producto_Javier {
         double num2 = leer.nextInt(); // Almacena el segundo número entero
         return Math.pow(num1, num2); // Devuelve el resultado de la potencia
     }
-
+    /**
+     * 4.1 Potencia de dos números
+     * Método diseñado para pruebas unitarias
+     * @param num1 Primer valor.
+     * @param num2 Segundo valor.
+     * @return Math.pow, método estático de la clase Math que se utiliza para calcular la potencia de un número.
+     */
+    public double potencia(double num1, double num2) {
+        return Math.pow(num1, num2);
+    }
 }
