@@ -21,8 +21,8 @@ Las operaciones que realiza la calculadora son:
 Los tests han sido repartidos de la siguiente manera:
 - ⏳ ➕ **Suma** (en desarrollo). Encargado: Euken.
 - ✅ ➖ **Resta** (implementada). Encargado: Adrián.
-- ⏳ ✖️ **Producto** (en desarrollo). Encargado: Ignacio.
-- ✅ ➗ **Cociente** (implementada). Encargado: Javier.
+- ⏳ ✖️ **Producto** (implementada). Encargado: Javier.
+- ✅ ➗ **Cociente** (implementada). Encargado: Ignacio.
 
 ### 📚 Características del proyecto
 - 📔 Menú interactivo a través de la consola mediante el cual se selecciona la operación que se desea realizar.
