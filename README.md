@@ -19,7 +19,7 @@ Las operaciones que realiza la calculadora son:
 - ✅ ➗ **Cociente** (implementada). Encargado: Euken.
 
 Los tests han sido repartidos de la siguiente manera:
-- ⏳ ➕ **Suma** (en desarrollo). Encargado: Euken.
+- ⏳ ➕ **Suma** (implementada). Encargado: Euken.
 - ✅ ➖ **Resta** (implementada). Encargado: Adrián.
 - ⏳ ✖️ **Producto** (implementada). Encargado: Javier.
 - ✅ ➗ **Cociente** (implementada). Encargado: Ignacio.
