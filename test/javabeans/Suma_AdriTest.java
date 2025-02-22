@@ -46,6 +46,4 @@ class Suma_AdriTest {
         // Verifica que el valor acumulado inicial es 0.0
         assertEquals(0.0, sumaAdri.getValorAcumulado(), 0.0001);
     }
-
-
 }
